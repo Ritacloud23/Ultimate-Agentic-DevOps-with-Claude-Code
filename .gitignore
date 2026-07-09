@@ -1,0 +1,13 @@
+# Terraform
+# Local working-directory artifacts (provider cache, local state).
+# .terraform.lock.hcl is intentionally NOT ignored — commit it so provider
+# versions stay pinned across machines.
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# OS noise
+.DS_Store
+Thumbs.db
