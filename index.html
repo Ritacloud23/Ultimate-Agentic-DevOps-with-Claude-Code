@@ -39,19 +39,12 @@
       </div>
 
 
-      <div class="hamburger" onclick="toggleMenu()">
-        ☰
-      </div>
+      <!-- Mobile hamburger — mounted by the MobileNav React component -->
+      <div id="mobile-nav-root"></div>
 
     </div>
-    <div id="mobileMenu" class="mobile-menu">
-      <button onclick="goToSection('home')">Home</button>
-      <a href="https://university.pravinmishra.in/learn" target="_blank">University</a>
-      <a href="https://blog.pravinmishra.com/" target="_blank">Blog</a>
-      <button onclick="goToSection('book')">Book</button>
-      <button onclick="goToSection('courses')">Courses</button>
-      <button class="mobile-contact" onclick="goToSection('contact')">Contact</button>
-    </div>
+    <!-- Portal target: MobileNav renders the dropdown menu into this -->
+    <div id="mobile-menu-portal"></div>
   </nav>
 
   <section id="home" class="hero">
