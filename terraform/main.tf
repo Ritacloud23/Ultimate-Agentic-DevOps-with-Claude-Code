@@ -20,7 +20,6 @@ resource "aws_s3_bucket" "site" {
 # Block ALL public access — required when serving through CloudFront OAC.
 resource "aws_s3_bucket_public_access_block" "site" {
   bucket = aws_s3_bucket.site.id
-
   block_public_acls       = true
   block_public_policy     = true
   ignore_public_acls      = true
